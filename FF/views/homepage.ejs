@@ -1,0 +1,10 @@
+<form class="form-inline" role="form">
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-addon">輸入社團名稱：</div>
+      <input type="text" class="form-control" id="GroupName" placeholder="輸入社團名稱...">
+    </div>
+    <button type="button" class="btn btn-primary">新增</button>
+  </div>
+<input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control">
+<input type="text" ng-model="belongSelected" placeholder="Custom template" typeahead="belong as belong.name for belong in belongData | filter:{name:$viewValue}" typeahead-template-url="belongFilter.html" class="form-control">  
