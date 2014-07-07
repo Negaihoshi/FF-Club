@@ -25,8 +25,9 @@ def BSPaser(req,day):
 	id = 0
 	FileName = "FF_Day"+str(day)+".json"
 	jsonFile = open(FileName,"w+",encoding="utf-8")
+	groups = open("groupsName.json","w+",encoding="utf-8")
 
-
+	hintFile = []
 	for x in range(3,len(table),3):
 		datastruct = {
 			"id": "",
@@ -38,8 +39,9 @@ def BSPaser(req,day):
 		data = re.match('^.+>(.+)<', str(table[x])).groups()
 		data2 = re.match('^.+>(.+)<', str(table[x+1])).groups()
 		datastruct['攤位編號'] = data
-
 		datastruct['社團'] = data2
+
+		hintFile.append(data2)
 		#datastruct['社團'] = re.match('^.+>(.+)<', str(table[x])).groups()
 		#print(datastruct['id'],datastruct['社團'])
 
@@ -48,6 +50,9 @@ def BSPaser(req,day):
 	toJson = json.dumps(list, ensure_ascii=False, indent=2)
 	jsonFile.write(toJson)
 	jsonFile.close()
+	hintFile = ''.join([str(i) for i in hintFile])
+	groups.write(hintFile)
+	groups.close()
 
 
 
@@ -66,5 +71,3 @@ if __name__ == "__main__":
 	WebRequest('http://www.f-2.com.tw/index.php?q=ff/49229',1)
 	#Day 2
 	WebRequest('http://www.f-2.com.tw/index.php?q=ff/49230',2)
-
-
