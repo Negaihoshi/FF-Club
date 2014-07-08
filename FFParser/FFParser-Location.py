@@ -28,6 +28,7 @@ def BSPaser(req,day):
 	groups = open("groupsName.json","w+",encoding="utf-8")
 
 	hintFile = []
+	hintFile.append('[')##
 	for x in range(3,len(table),3):
 		datastruct = {
 			"id": "",
@@ -41,7 +42,12 @@ def BSPaser(req,day):
 		datastruct['攤位編號'] = data
 		datastruct['社團'] = data2
 
-		hintFile.append(data2)
+		
+		temp=str(data2)##
+		temp=temp.strip(')')##
+		temp=temp.strip('(')##
+		hintFile.append(temp)##
+		#print(temp)
 		#datastruct['社團'] = re.match('^.+>(.+)<', str(table[x])).groups()
 		#print(datastruct['id'],datastruct['社團'])
 
@@ -50,7 +56,9 @@ def BSPaser(req,day):
 	toJson = json.dumps(list, ensure_ascii=False, indent=2)
 	jsonFile.write(toJson)
 	jsonFile.close()
+	hintFile.append(']')##
 	hintFile = ''.join([str(i) for i in hintFile])
+	
 	groups.write(hintFile)
 	groups.close()
 
