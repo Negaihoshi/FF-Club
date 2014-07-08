@@ -42,7 +42,6 @@ def BSPaser(req,day):
 		datastruct['攤位編號'] = data
 		datastruct['社團'] = data2
 
-		
 		temp=str(data2)##
 		temp=temp.strip(')')##
 		temp=temp.strip('(')##
@@ -58,7 +57,7 @@ def BSPaser(req,day):
 	jsonFile.close()
 	hintFile.append(']')##
 	hintFile = ''.join([str(i) for i in hintFile])
-	
+
 	groups.write(hintFile)
 	groups.close()
 
