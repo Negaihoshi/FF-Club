@@ -446,7 +446,7 @@
   }, 
   {
     "id": 90, 
-    "Name": "\"ERIC'S WORLD\"", 
+    "Name": "ERIC'S WORLD", 
     "Location": "D19,D20"
   }, 
   {
@@ -506,7 +506,7 @@
   }, 
   {
     "id": 102, 
-    "Name": "\"NiNE's\"", 
+    "Name": "NiNE's", 
     "Location": "D32"
   }, 
   {
@@ -1051,7 +1051,7 @@
   }, 
   {
     "id": 211, 
-    "Name": "\"Shawli's Fantasy\"", 
+    "Name": "Shawli's Fantasy", 
     "Location": "H27,H28"
   }, 
   {
@@ -1061,7 +1061,7 @@
   }, 
   {
     "id": 213, 
-    "Name": "\"Hiroshi's Artwork Studio\"", 
+    "Name": "Hiroshi's Artwork Studio", 
     "Location": "H30"
   }, 
   {
@@ -1201,7 +1201,7 @@
   }, 
   {
     "id": 241, 
-    "Name": "\"Life isn't Easy\"", 
+    "Name": "Life isn't Easy", 
     "Location": "I26"
   }, 
   {
@@ -1246,7 +1246,7 @@
   }, 
   {
     "id": 250, 
-    "Name": "\"Krenz's Artwork\"", 
+    "Name": "Krenz's Artwork", 
     "Location": "I35,I36"
   }, 
   {
@@ -1371,7 +1371,7 @@
   }, 
   {
     "id": 275, 
-    "Name": "\"KOD's\"", 
+    "Name": "KOD's", 
     "Location": "J31"
   }, 
   {
@@ -1656,7 +1656,7 @@
   }, 
   {
     "id": 332, 
-    "Name": "\"Belu's創作聯萌\"", 
+    "Name": "Belu's創作聯萌", 
     "Location": "L34"
   }, 
   {
@@ -1776,7 +1776,7 @@
   }, 
   {
     "id": 356, 
-    "Name": "金魚草養\"植\"場", 
+    "Name": "金魚草養植場", 
     "Location": "M27,M28"
   }, 
   {
@@ -3346,7 +3346,7 @@
   }, 
   {
     "id": 670, 
-    "Name": "\"Kamiro's Comic Market\"", 
+    "Name": "Kamiro's Comic Market", 
     "Location": "丑34"
   }, 
   {
@@ -3461,7 +3461,7 @@
   }, 
   {
     "id": 693, 
-    "Name": "\"REI's ROOM\"", 
+    "Name": "REI's ROOM", 
     "Location": "卯33,卯34"
   }, 
   {
@@ -3496,7 +3496,7 @@
   }, 
   {
     "id": 700, 
-    "Name": "\"SUBARU's\"", 
+    "Name": "SUBARU's", 
     "Location": "特12"
   }, 
   {
@@ -3631,7 +3631,7 @@
   }, 
   {
     "id": 727, 
-    "Name": "\"Girl's Wind\"", 
+    "Name": "Girl's Wind", 
     "Location": "寅27,寅28"
   }, 
   {
@@ -3646,7 +3646,7 @@
   }, 
   {
     "id": 730, 
-    "Name": "\"EN'Logic\"", 
+    "Name": "EN'Logic", 
     "Location": "寅30"
   }, 
   {

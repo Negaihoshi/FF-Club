@@ -32,19 +32,23 @@ def BSPaser(req,day):
 	for x in range(3,len(table),3):
 		datastruct = {
 			"id": "",
-			"社團": "",
-			"攤位編號": ""
+			"Name": "",
+			"Location": ""
 		}
 		id+=1
 		datastruct['id'] = id
 		data = re.match('^.+>(.+)<', str(table[x])).groups()
 		data2 = re.match('^.+>(.+)<', str(table[x+1])).groups()
-		datastruct['攤位編號'] = data
-		datastruct['社團'] = data2
 
 		temp=str(data2)
-		temp=temp.strip(',)')
-		temp=temp.strip('(')
+		temp=temp.strip('\',)')
+		temp=temp.strip('\'(')
+		temp2=str(data)
+		temp2=temp2.strip('\',)')
+		temp2=temp2.strip('\'(')
+		datastruct['Location'] = temp2
+		datastruct['Name'] = temp
+
 		hintFile.append(temp)
 		#print(temp)
 		#datastruct['社團'] = re.match('^.+>(.+)<', str(table[x])).groups()

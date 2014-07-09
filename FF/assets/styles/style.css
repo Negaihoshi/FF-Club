@@ -1,0 +1,12 @@
+.list-group-item:hover{
+    color: White;
+    background-color: #428BCA;
+}
+.list-group-item:focus{
+    color: White;
+    background-color: #428BCA;
+}
+.list-group-item:active{
+    color: White;
+    background-color: #428BCA;
+}
